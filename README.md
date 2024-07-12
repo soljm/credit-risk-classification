@@ -27,18 +27,28 @@ A classification report was printed to assess how well the model does in predict
 
 ## Results
 
-- 
+For this machine learning model:
 
-Using bulleted lists, describe the accuracy scores and the precision and recall scores of all machine learning models.
+- Accuracy score: 0.99 (99%)
+- Healthy loan (`0`): Support - 18765
 
-- Machine Learning Model 1:
-  - Description of Model 1 Accuracy, Precision, and Recall scores.
+  - Precision: 1.00 (100%)
+  - Recall: 0.99 (99%)
+
+- High-risk loan (`1`): Support - 619
+
+  - Precision: 0.84 (84%)
+  - Recall: 0.94 (94%)
+
+- Macro average (when classes are imbalanced):
+
+  - Precision: 0.92 (92%)
+  - Recall: 0.97 (97%)
 
 ## Summary
 
-Summarise the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
+Looking at the macro averages, the model performs quite well as the scores are all above 0.90 (90%). However, as the precision score of class `0` is exactly **1.00**, it does raise suspicion as to whether the model actually works properly, as this implies that there were no false positives (loans that were identified as healthy even though it was high-risk).
 
-- Which one seems to perform best? How do you know it performs best?
-- Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+On the other hand, looking at just the `1`'s, the scores are relatively low compared to the `0` scores, meaning the detection of high-risk loans is lower than the detection of healthy loans. 
 
-If you do not recommend any of the models, please justify your reasoning.
+Concluding, this model is not recommended to be used to determine the creditworthiness of borrowers at its current state until more testing is done or accuracy of the model can be verified.
