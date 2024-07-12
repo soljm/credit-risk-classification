@@ -52,3 +52,7 @@ Looking at the macro averages, the model performs quite well as the scores are a
 On the other hand, looking at just the `1`'s, the scores are relatively low compared to the `0` scores, meaning the detection of high-risk loans is lower than the detection of healthy loans. 
 
 Concluding, this model is not recommended to be used to determine the creditworthiness of borrowers at its current state until more testing is done or accuracy of the model can be verified.
+
+## Credits
+
+All data generated for this assignment.
